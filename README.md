@@ -1,3 +1,21 @@
+# Guidelines to Run the Application
+
+Step 1.	Clone the Repository:
+    git clone https://github.com/munekamgilbert/search-user-app.git
+    cd search-user-app
+Step 2.	Install Dependencies: run these commands to make sure you can run the application on local:
+    node -v
+    npm -v
+Then install the project’s dependencies:
+    npm install
+
+Step 3.	Start the Development Server
+    npm start
+This will start the React app and open it in the browser at:
+http://localhost:3000
+
+# Please Ignore intsructions below but can be useful.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
