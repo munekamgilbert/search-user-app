@@ -50,7 +50,7 @@ const SearchApp = () => {
       const data = await response.json();
       //console.log('API Response:', data);
       const usersFromResult = data?.response?.body?.users;
-      setUsers(data.response || []);
+      setUsers(usersFromResult || []);
       setError(null);
     } catch (err) {
       setError(err.message);
