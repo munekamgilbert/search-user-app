@@ -31,7 +31,7 @@ const SearchApp = () => {
     if (!searchQuery) return;
 
     try {
-      const response = await fetch('https://cors-anywhere.herokuapp.com/https://rocketapi-for-developers.p.rapidapi.com/instagram/user/search', {
+      const response = await fetch('https://rocketapi-for-developers.p.rapidapi.com/instagram/user/search', {
         method: 'POST',
         headers: {
           'x-rapidapi-ua': 'RapidAPI-Playground',
@@ -48,7 +48,8 @@ const SearchApp = () => {
       }
 
       const data = await response.json();
-      console.log('API Response:', data);
+      //console.log('API Response:', data);
+      const usersFromResult = data?.response?.body?.users;
       setUsers(data.response || []);
       setError(null);
     } catch (err) {
